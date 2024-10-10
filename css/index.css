@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;}
+
+.header-deco {
+    background-color: white;
+    padding: 5px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-main {
+    padding: 0px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-mid {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-ul-list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-ul-list li a {
+    text-decoration: none;
+    font-size: 14px medium;
+    color:#1E1515;
+    font-style:  bold;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 5px;
+
+}
+
+.nav-ul-list li a:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-right ul li a{
+   text-decoration: none;
+   color: #1E1515;
+}
+
+.nav-right button, .nav-right input[type="button"]{
+    font-size: 14px;
+    color:#1E1515;
+    border: none;
+    background-color: aquamarine;
+    padding: 10px;
+    font-style: bold;
+    
+    border-radius: 5px;
+
+}
+
+.nav-right button, .nav-right input[type="button"]:hover{
+    cursor: pointer;
+    color:black;
+}

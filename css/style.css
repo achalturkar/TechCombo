@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif; 
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header-deco {
+    background-color: white; 
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Navbar styling */
+.navbar-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+/* Logo styling */
+.nav-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.nav-ul-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Link styling */
+.nav-ul-list li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #4b4b4b; 
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-ul-list li a:hover {
+    color: #ff6347; 
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Dropdown styling */
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position:absolute;
+    list-style: none;
+    display: none;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0px;
+    z-index: 1;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+
+}
+
+.dropdown-menu li {
+    padding: 5px;
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+.navbar-main .action_btn{
+   text-decoration: none;
+   color: white;
+   cursor: pointer;
+   background-color: black;
+   padding: 8px 15px;
+   border: none;
+   border-radius: 20px;
+   font-weight: bold;
+
+}
+
+.action_btn:hover{
+    background-color: #ff6347;
+    scale: 0.95;
+}
+
+.toggle_btn{
+    color:black;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* dropdown toggle */
+.dropdown-toggle {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 2rem;
+    background-color: rgba(16, 1, 1, 0.9);
+    z-index: 1;
+    width: 300px;
+    text-transform: uppercase;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+}
+
+/* When menu is open */
+.dropdown-toggle.open {
+    display: block;
+    max-height: 500px; 
+}
+
+.dropdown-toggle li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+}
+
+.dropdown-toggle li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Submenu initially hidden */
+.dropdown-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 0;
+    margin-top: 5px;
+}
+
+/* Show submenu on hover */
+.dropdown-li-toggle:hover .dropdown-menu-toggle {
+    display: block;
+    position: relative;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 894px) {
+    .navbar-main {
+
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+
+    .nav-middle {
+        flex-direction: column;
+    }
+
+    .nav-ul-list {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+   .toggle_btn{
+    display: block;
+   }
+
+   .dropdown-toggle{
+    display: block;
+    }
+    
+}
+
+/* main */
+
+.main-element {
+    padding: 50px;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.parent-box {
+    border: 1px solid transparent; /* Removed the red border for a cleaner look */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.parent-box-1 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%; /* Reduced gap for a better look */
+    padding: 20px;
+    margin: 50px 0px;
+    /* border: 1px solid black; */
+}
+
+.first-child {
+    width: 50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.first-child h1 {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+.first-child h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.second-child {
+    padding-left: 20px ;
+    width: 50%;
+    max-width: 600px; 
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    object-fit: cover; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished look */
+}
+
+.social-icon h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.social-icon a i {
+    font-size: 24px;
+    color: #0077b5; /* LinkedIn color */
+    transition: color 0.3s ease;
+}
+
+.social-icon a i:hover {
+    color: #005582; /* Darker color on hover */
+}
+
+
+.parent-box-2{
+    /* border: 1px solid blue; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+    padding: 30px;
+    height: 100%
+
+}
+.container-desc{
+    height: 30%;;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container-desc h1{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    
+    opacity: 1; /* Initially invisible */
+    transform: translateY(30px); /* Start 30px below */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    
+}
+
+.show-heading {
+    opacity: 1; /* Make the heading visible */
+    transform: translateY(0); /* Move the heading to its original position */
+}
+/* Container for Services */
+.container-serv {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    gap: 5%;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 20px;
+}
+
+/* Individual Service Box */
+.perform-child {
+    border: 1px solid transparent;
+    text-align: center;
+    width: 30%; /* Ensures 3 items per row on larger screens */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+/* Hover effect for service box */
+.perform-child:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Image Styling */
+.perform-child img {
+    width: 70%; /* Consistent size for icons */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Heading Styling */
+.perform-child h2 {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+.perform-child p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Button Styling */
+
+.perform-child a{
+    text-decoration: none;
+     font-weight: bold; 
+}
+
+.make-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+
+}
+
+.make-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #ff6347;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow on button hover */
+}
+
+
+
+/* journey */
+
+.container-journey{
+    width: 100%;
+    display: flex;
+    
+
+}
+
+.journey-content{
+    gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 894px) {
+
+    .main-element {
+        padding: 20px;
+        margin-top: 10px;
+        box-sizing: border-box;
+    }
+
+    .parent-box{
+        flex-direction: column;
+    }
+    .parent-box-1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .first-child, .second-child {
+        width: 100%;
+        text-align: center;
+    }
+
+    .first-child {
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+    .second-child {
+        width: 100%;
+    }
+
+    .carousel-inner img {
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .perform-child {
+        width: 90%; /* 2 items per row on medium screens */
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width:420px){
+    .perform-child h2{
+        font-size: 15px;
+    }
+}
+
+
+
+/* Footer Styling */
+.main-footer {
+    background-color: #0d0145; 
+    color: #fff; 
+    padding: 40px 20px;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.foot-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.nav-foot {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-ul-list-footer {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-ul-list-footer li {
+    margin-bottom: 10px;
+}
+
+.nav-ul-list-footer a {
+    text-decoration: none;
+    color: #fbf6f6;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-ul-list-footer a:hover {
+    color: #ff6347; 
+}
+
+.service-job {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.service h3 {
+    color: #fbf9f9; 
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.service ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service ul li {
+    margin-bottom: 8px;
+}
+
+.service ul a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.service ul a:hover {
+    color: #ff6347;
+}
+
+/* Follow Us Section */
+.follow-site h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon a {
+    color: #bbb;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon a:hover {
+    color: #080100;
+    transform: scale(1.1); 
+}
+
+/* Horizontal Line */
+footer hr {
+    border: 1px solid #444;
+    margin: 30px 0;
+}
+
+/* Copyright Section */
+.copy-right {
+    text-align: center;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive Design */
+@media (max-width: 894px) {
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foot-logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-foot, .service-job, .follow-site {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-icon {
+        justify-content: center;
+    }
+}
