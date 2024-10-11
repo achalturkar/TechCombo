@@ -206,11 +206,11 @@ body {
 }
 
 .parent-box {
-    border: 1px solid transparent; /* Removed the red border for a cleaner look */
+    border: 1px solid transparent; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    flex-wrap: wrap; 
 }
 
 .parent-box-1 {
@@ -218,7 +218,7 @@ body {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 5%; /* Reduced gap for a better look */
+    gap: 5%; 
     padding: 20px;
     margin: 50px 0px;
     /* border: 1px solid black; */
@@ -231,14 +231,14 @@ body {
 }
 
 .first-child h1 {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 800;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 20px;
 }
 
 .first-child h3 {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
     margin-bottom: 30px;
     font-family: Arial, sans-serif;
@@ -318,7 +318,7 @@ body {
     align-items: center;
     margin-top: 20px;
     gap: 5%;
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    flex-wrap: wrap;
     padding: 20px;
 }
 
@@ -326,23 +326,23 @@ body {
 .perform-child {
     border: 1px solid transparent;
     text-align: center;
-    width: 30%; /* Ensures 3 items per row on larger screens */
+    width: 30%; 
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f9f9f9; 
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Hover effect for service box */
 .perform-child:hover {
     transform: translateY(-10px); /* Slight lift on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 /* Image Styling */
 .perform-child img {
-    width: 70%; /* Consistent size for icons */
+    width: 70%; 
     height: auto;
     object-fit: cover;
     margin-bottom: 15px;
@@ -388,9 +388,64 @@ body {
     cursor: pointer;
     color: white;
     background-color: #ff6347;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Shadow on button hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
+
+
+.main-cont-info{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 1px solid black; */
+    justify-content: space-around;
+    
+
+}
+
+.cont-info{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     width: 23%;
+     /* border: 1px solid rebeccapurple; */
+     padding: 10px;
+}
+
+.circle{
+    height:60%;
+    display: flex;
+    width:120PX;
+    height: 120PX;
+    border-radius: 50%;
+    background-color: #ff6347;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.head{
+    height: 40%;
+    text-align: center;
+}
+
+.cont-info h2{
+    font-size: 40px;
+    font-weight: bolder;
+    /* font-style: italic; */
+    color: white;
+}
+
+.cont-info h1{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
 
 
 /* journey */
@@ -411,8 +466,8 @@ body {
 @media (max-width: 894px) {
 
     .main-element {
-        padding: 20px;
-        margin-top: 10px;
+        padding: 5px;
+        margin-top: 5px;
         box-sizing: border-box;
     }
 
@@ -446,12 +501,21 @@ body {
         width: 90%; /* 2 items per row on medium screens */
         margin-bottom: 20px;
     }
-    
+
+    .cont-info{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
 }
 
 @media (max-width:420px){
     .perform-child h2{
         font-size: 15px;
+    }
+
+    .cont-info{
+        width:80%;
     }
 }
 
