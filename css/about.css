@@ -1,0 +1,147 @@
+
+.main-element{
+    box-sizing: border-box;
+
+}
+.main-cont-about{
+    padding :30px;
+    width: 100%;
+}
+.parent-box-1{
+    width: 100%;
+   /* background-color: aqua; */
+
+}
+
+.first-child-about{
+    width: 50%;
+    /* border: 1px solid black; */
+}
+
+.second-child-about{
+ width: 50%;
+}
+
+.parent-box-2{
+    box-sizing: border-box;
+    margin: 20px;
+}
+.parent-box-color{
+    background-color: whitesmoke;
+}
+
+.ourney-corousel{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.journey-corousel{
+    text-align: center;
+   
+}
+
+.head-about h1{
+ font-size: 36px;
+ font-family: Poppins, sans-serif;
+ font-weight: 700;
+
+}
+
+.descrbe-about p{
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+
+.main-head-about h1{
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.main-head-about h1{
+    position: relative;
+    width: max-content;
+}
+.main-head-about h1::after{
+    content: '';
+    background:linear-gradient(to right, #0d0145, rgb(251, 163, 23));
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 100ms;
+}
+
+.serve-about{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.serve-about-contain{
+    width: 20%;
+}
+
+.about-cont-info{
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+    padding: 20px;
+    gap: 10%;
+    text-align: center;
+
+}
+
+.cont-head-main{
+    height: 40%;
+    overflow: hidden;
+}
+.cont-head-main h3{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+.about-cont-info p{
+   height:60%
+}
+
+.about-cont-info:hover{
+    color:  #0d0145;
+    cursor: pointer;
+transform: translateY(-10px);
+box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+
+}
+
+
+.serve-about-mission{
+  /* text-align: center; */
+}
+
+
+
+@media (max-width: 894px) {
+    .serve-about {
+        flex-direction: column;
+        gap: 20px; /* Increased gap for better spacing */
+    }
+
+    .serve-about-contain {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .first-child-about,
+    .second-child-about {
+        width: 100%; /* Stack vertically */
+    }
+
+    .journey-carousel {
+        flex-direction: column; /* Adjust carousel direction */
+    }
+}

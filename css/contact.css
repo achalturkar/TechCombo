@@ -21,6 +21,12 @@
     justify-content: center;
     /* border: 1px solid green; */
     width: 25%;
+    animation: moveUp 1s ease-out forwards; 
+
+}
+
+.left-contact:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .left-contact-detail {
@@ -50,6 +56,17 @@
 
 }
 
+.mail-link{
+    text-decoration: none;
+    color:black;
+}
+
+.mail-link:hover{
+    color: black;
+    cursor:pointer;
+    text-decoration: none;
+}
+
 .cont-info-2 {
     font-size: 20px;
     color: black;
@@ -62,8 +79,13 @@
     /* border: 1px solid red; */
     width: 65%;
     padding: 20px;
+    animation: moveUp 1s ease-out forwards; 
 
 
+}
+
+.right-contact:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .form-heading h1 {
@@ -124,6 +146,14 @@
     background-color: #3e2093;
 }
 
+@keyframes moveUp {
+    0% {
+      transform: translateY(100vh); /* Start off-screen from bottom */
+    }
+    100% {
+      transform: translateY(0); /* Move to the top position */
+    }
+  }
 
 
 @media (max-width:900px) {
