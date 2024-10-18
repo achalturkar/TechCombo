@@ -228,7 +228,7 @@ body {
 }
 
 .parent-box {
-        padding: 50px 80px;
+    padding: 50px 80px;
     border: 1px solid transparent; 
     display: flex;
     justify-content: space-between;
@@ -527,7 +527,7 @@ padding-left: 4%;}
     .parent-box{
         padding: 10px 10px;
         flex-direction: column;
-        margin: 20px 0;
+        /* margin: 20px 0; */
         
     }
     .parent-box-1 {
