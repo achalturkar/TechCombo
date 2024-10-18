@@ -146,6 +146,22 @@
     background-color: #3e2093;
 }
 
+.map-container{
+    width: 100%;
+    height: auto;
+
+}
+
+.map-container h3{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.map-container iframe{
+    color: rgba(0, 0, 0, 0.15);
+}
+
 @keyframes moveUp {
     0% {
       transform: translateY(100vh); 
