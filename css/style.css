@@ -506,14 +506,14 @@ padding-left: 4%;}
     width: 200px;
 }
 
-@keyframes moveup {
+/* @keyframes moveup {
     0%{ 
         transform: translateY(20vh);
     }
     100%{
         transform: translateY(0);
     }
-}
+} */
 
 /* Responsive Design */
 @media (max-width: 894px) {

@@ -146,15 +146,14 @@
     background-color: #3e2093;
 }
 
-@keyframes moveUp {
+/* @keyframes moveUp {
     0% {
-      transform: translateY(100vh); /* Start off-screen from bottom */
-    }
+      transform: translateY(100vh); 
     100% {
-      transform: translateY(0); /* Move to the top position */
+      transform: translateY(0); 
     }
   }
-
+  */
 
 @media (max-width:900px) {
     .contact-box {
