@@ -159,12 +159,12 @@
 }
 
 .map-container iframe{
-    color: rgba(0, 0, 0, 0.15);
+    color: #536493;
 }
 
 @keyframes moveUp {
     0% {
-      transform: translateY(100vh); 
+      transform: translateY(50vh); 
     }
     100% {
       transform: translateY(0); 

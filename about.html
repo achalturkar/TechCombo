@@ -67,10 +67,10 @@
             </ul>
             <!-- </div> -->
 
-            <a href="#" class="action_btn"> Upload CV</a>
+            <!-- <a href="#" class="action_btn"> Upload CV</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </div> -->
 
 
         </nav>
@@ -112,7 +112,7 @@
 
     <main class="main-element">
         <div class="parent-box">
-            <section class="parent-box-1">
+            <section class="parent-box-1 parent-sidepad">
                 <div class="first-child-about">
                     <div style="max-width: 500px;" id="carouselExampleControls" class="carousel slide"
                         data-ride="carousel">
@@ -226,7 +226,8 @@
                                     <h4>
                                         <strong>2023</strong>
                                     </h4>
-                                    <p>By 2023, we proudly celebrated the successful completion of projects for over 100 clients
+                                    <p>By 2023, we proudly celebrated the successful completion of projects for over 100
+                                        clients
                                         across multiple sectors.
                                         This milestone not only reflects our dedication to excellence but also
                                         underscores our ability to adapt to market demands and deliver results. Our
@@ -249,13 +250,10 @@
                     </div>
                 </div>
 
-
-
-
             </section>
 
 
-            <section class="parent-box-2">
+            <section class="parent-box-2 parent-sidepad">
 
                 <div class="main-head-about">
                     <h1>What We Offer</h1>
@@ -328,7 +326,7 @@
 
             </section>
 
-            <section class="parent-box-2">
+            <section class="parent-box-2 parent-box-color">
 
                 <div class="main-head-about">
                     <h1>Why Choose Us?</h1>
@@ -370,7 +368,7 @@
                 </div>
             </section>
 
-            <section class="parent-box-2">
+            <section class="parent-box-2 parent-sidepad">
 
                 <div class="main-head-about">
                     <h1>Our Mission
@@ -402,7 +400,9 @@
                 </div>
 
             </section>
-
+            <a href="#" class="back-to-top" id="backToTop">
+                <i class="fa-solid fa-plane-up"></i>
+            </a>
         </div>
     </main>
 
@@ -454,20 +454,8 @@
     </footer>
 
 
-    <script>
-        const toggleBtn = document.querySelector('.toggle_btn');
-        const toggleBtnIcon = document.querySelector('.toggle_btn i');
-        const dropdownMenu = document.querySelector('.dropdown-toggle');
-
-        toggleBtn.onclick = function () {
-            dropdownMenu.classList.toggle('open'); // Toggle the 'open' class
-
-            const isOpen = dropdownMenu.classList.contains('open');
-            toggleBtnIcon.classList.toggle('fa-xmark', isOpen); // Toggle cross icon
-            toggleBtnIcon.classList.toggle('fa-bars', !isOpen); // Toggle bars icon
-        };
+    <script src="/js/script.js">
     </script>
-
 
 </body>
 

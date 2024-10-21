@@ -30,7 +30,7 @@
 }
 
 .parent-box-color {
-    background-color: whitesmoke;
+    background-color:whitesmoke;
 }
 
 .journey-parent{
@@ -133,6 +133,7 @@
 }
 
 .about-cont-info:hover {
+    background-color: aquamarine;
     color: #0d0145;
     cursor: pointer;
     transform: translateY(-10px);
