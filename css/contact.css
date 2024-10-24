@@ -2,6 +2,21 @@
     box-sizing: border-box;
 }
 
+
+.contact-head-info{
+   color: white;
+   background-color: #536493;
+   height:300px;
+   position: relative;
+}
+
+.contact-head-info h1{
+    font-weight: 700;
+    font-size: 40px;
+    color: white;
+    font-family:  Arial, sans-serif;
+    
+}
 .contact-box {
     padding: 30px;
     width: 100%;
@@ -11,6 +26,7 @@
     background-color: white;
     border-radius: 30px;
     justify-content: space-around;
+    /* position: absolute; */
 }
 
 .left-contact {
@@ -76,7 +92,7 @@
 
 .right-contact {
 
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 65%;
     padding: 20px;
     animation: moveUp 1s ease-out forwards; 
@@ -149,7 +165,7 @@
 .map-container{
     width: 100%;
     height: auto;
-
+    position: relative;
 }
 
 .map-container h3{
@@ -160,6 +176,16 @@
 
 .map-container iframe{
     color: #536493;
+
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(94, 96, 97, 0.4); /* Adjust opacity to control darkness */
+    pointer-events: none; /* Prevent overlay from blocking map interactions */
 }
 
 @keyframes moveUp {
