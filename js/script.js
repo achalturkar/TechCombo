@@ -1,6 +1,6 @@
 const toggleBtn = document.querySelector('.toggle_btn');
 const toggleBtnIcon = document.querySelector('.toggle_btn i');
-const dropdownMenu = document.querySelector('.dropdown-toggle');
+const dropdownMenu = document.querySelector('.dropdown-toggle-1');
 
 toggleBtn.onclick = function () {
     dropdownMenu.classList.toggle('open'); // Toggle the 'open' class
