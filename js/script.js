@@ -9,6 +9,17 @@ toggleBtn.onclick = function () {
     toggleBtnIcon.classList.toggle('fa-xmark', isOpen); // Toggle cross icon
     toggleBtnIcon.classList.toggle('fa-bars', !isOpen); // Toggle bars icon
 };
+
+
+window.addEventListener('resize', function () {
+    if (window.innerWidth > 894 && dropdownMenu.classList.contains('open')) {
+        dropdownMenu.classList.remove('open'); // Close the menu
+        toggleBtnIcon.classList.remove('fa-xmark'); // Reset to bars icon
+        toggleBtnIcon.classList.add('fa-bars');
+    }
+});
+
+
 window.addEventListener('load', function () {
     const heading = document.querySelector('.container-desc h1');
     heading.classList.add('show-heading'); // Add the class to trigger the animation
@@ -16,6 +27,7 @@ window.addEventListener('load', function () {
 
 
 // Show the back-to-top button when scrolling down
+
 window.addEventListener("scroll", function () {
     const backToTopButton = document.getElementById("backToTop");
     if (window.scrollY > 300) { // Adjust the scroll value as needed
