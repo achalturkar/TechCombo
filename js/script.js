@@ -46,4 +46,21 @@ document.getElementById("backToTop").addEventListener("click", function (e) {
     });
 });
 
-  
+
+
+//change mode dark and light 
+
+const btn = document.querySelector("#mode");
+const body = document.body;
+let isDarkMode = true; 
+
+btn.addEventListener("click", () => {
+    if (isDarkMode) {
+        body.classList.remove("dark");
+        body.classList.add("light");
+    } else {
+        body.classList.remove("light");
+        body.classList.add("dark");
+    }
+    isDarkMode = !isDarkMode;  
+});
