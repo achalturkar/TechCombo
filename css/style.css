@@ -153,7 +153,6 @@ body {
     top: 60px;
     right: 2rem;
     background-color: white;
-    z-index: 1;
     width: 110%;
     align-items: center;
     text-transform: uppercase;
@@ -162,6 +161,7 @@ body {
     transition: max-height 0.3s ease;
     border-radius: 20px;
     left: 0;
+        z-index: 9999; /* High z-index value */
 }
 
 /* When menu is open */
@@ -521,6 +521,45 @@ main a {
     font-weight: 400;
 }
 
+/* journey section */
+
+.journey-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.timeline-item {
+    position: relative;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.timeline-item .year {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+/* slider images */
+
+.slider-items img{
+    /* width: 200px; */
+    height: 200px;
+    gap:20px;
+}
 
 /* goal section */
 
@@ -853,19 +892,35 @@ button{
         gap: 15px;
         width: 100%;
     }
+     /* journey-section */
 
+     .timeline{
+        flex-direction: column;
+     }
+
+     /* technology */
+
+     .slider-items{
+        display: flex;
+        flex-direction: column;
+     }
 
     /* contact */
 
     .contact-info {
         flex-direction: column;
     }
+
+    .box {
+        margin-bottom: 20px;
+    }
+    
     /* Adjust button style */
     .button-read {
         font-size: 18px;
         padding: 10px 20px;
     }
-
+    
 
     .back-to-top {
         bottom: 10px;
