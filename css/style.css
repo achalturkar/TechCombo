@@ -667,7 +667,7 @@ main a {
   .slider-items {
     display: flex;
     gap: 20px;
-    animation: scroll 30s linear infinite;
+    animation: scroll 50s linear infinite;
    
   }
 
