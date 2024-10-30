@@ -343,8 +343,8 @@ body {
 
 /* main */
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
 }
 
@@ -454,6 +454,101 @@ main a {
     transition: 100ms;
 }
 
+/* Achived Section */
+
+.achieved-section {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #0077b5, #15B392);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.achieved-heading h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.out-success {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.success {
+    width: 30%;
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #15B392;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle h2 {
+    font-weight: 900;
+    margin: 0;
+}
+
+.success-head h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .out-success {
+        flex-direction: column;
+    }
+
+    .success {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        width: 100px;
+        height: 100px;
+        font-size: 24px;
+    }
+
+    .achieved-heading h3 {
+        font-size: 28px;
+    }
+
+    .success-head h4 {
+        font-size: 16px;
+    }
+}
+
+
 
 /* service section */
 
@@ -553,13 +648,165 @@ main a {
 }
 
 
-/* slider images */
+/* Slider container */
 
-.slider-items img{
-    /* width: 200px; */
+
+.slider {
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
     height: 200px;
-    gap:20px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    width: 100%; 
+  }
+  
+  .slider-items {
+    display: flex;
+    gap: 20px;
+    animation: scroll 30s linear infinite;
+   
+  }
+
+  .slider-items:hover {
+     animation-play-state: paused;
+ 
 }
+
+
+  
+  .item {
+    height: 150px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .item:hover{
+
+  }
+  
+  .item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .item img:hover {
+    transform: translateY(-10px) scale(1.1);
+    cursor: pointer;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(90%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  @media (max-width:894px){
+    .slider-items {
+        animation:2s;
+       
+      }
+  }
+  
+  
+  /* journey section  */
+
+.journey {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+
+
+/* Timeline Styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Milestone Box Styling */
+.milestone {
+    width: 45%;
+    padding: 20px;
+    background-color: white;
+    color: #000;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.milestone h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-align: center;
+    color: #1b5895;
+}
+
+.milestone p {
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.milestone.left {
+    align-self: flex-start;
+}
+
+.milestone.right {
+    align-self: flex-end;
+}
+
+/* Connector Line Styling */
+/* .milestone::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.milestone.left::before {
+    left: -15px;
+}
+
+.milestone.right::before {
+    right: -15px;
+} */
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 894px) {
+    .milestone {
+        width: 100%;
+        align-self: center;
+    }
+
+    .milestone::before {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
+ 
+  
+  
 
 /* goal section */
 
@@ -823,6 +1070,8 @@ button{
 }
 
 
+
+
 @keyframes moveup {
     0% {
         transform: translateY(20vh);
@@ -838,11 +1087,13 @@ button{
     
    
     .header-content h1 {
+        font-family: Poppins, sans-serif;
         font-weight: 600;
         font-size: 40px;
     }
 
     .header-content p {
+
         font-weight: 400;
         font-size: 16px;
     }
@@ -872,7 +1123,6 @@ button{
     }
     .right {
         width: 100%;
-
         /* padding-left: 30px; */
     }
 
@@ -948,7 +1198,7 @@ button{
 .footer {
     position: relative;
     /* background-color: #0d0145; */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url('/images/world.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url('/public/images/world.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

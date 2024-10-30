@@ -52,7 +52,7 @@ document.getElementById("backToTop").addEventListener("click", function (e) {
 
 const btn = document.querySelector("#mode");
 const body = document.body;
-let isDarkMode = true; 
+let isDarkMode = false; 
 
 btn.addEventListener("click", () => {
     if (isDarkMode) {
@@ -64,3 +64,5 @@ btn.addEventListener("click", () => {
     }
     isDarkMode = !isDarkMode;  
 });
+
+
