@@ -1198,7 +1198,7 @@ button{
 .footer {
     position: relative;
     /* background-color: #0d0145; */
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url('/public/images/world.jpg');
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.8)), url('/assest/images/world.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
