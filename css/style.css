@@ -405,6 +405,7 @@ main a {
     font-size: 20px;
     font-family: Poppins;
     font-weight: 300;
+    line-height: 18pt;
 }
 
 .cont-link {
@@ -650,9 +651,8 @@ main a {
 
 /* Slider container */
 
-
 .slider {
-    padding: 0px 50px;
+    padding: 0 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -662,63 +662,62 @@ main a {
     position: relative;
     margin: auto;
     width: 100%; 
-  }
-  
-  .slider-items {
-    display: flex;
-    gap: 20px;
-    animation: scroll 50s linear infinite;
-   
-  }
-
-  .slider-items:hover {
-     animation-play-state: paused;
- 
 }
 
+.slider-items {
+    display: flex;
+    gap: 20px;
+    animation: scroll 40s linear infinite;
+}
 
-  
-  .item {
+.slider-items:hover {
+    animation-play-state: paused;
+}
+
+.item {
     height: 150px;
     width: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .item:hover{
-
-  }
-  
-  .item img {
+.item img {
     width: 100px;
     height: 100px;
     object-fit: contain;
     transition: transform 0.3s ease;
-  }
-  
-  .item img:hover {
+}
+
+.item img:hover {
     transform: translateY(-10px) scale(1.1);
     cursor: pointer;
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     0% {
-      transform: translateX(90%);
+        transform: translateX(100%);
     }
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
+}
 
-
-  @media (max-width:894px){
+@media (max-width: 894px) {
     .slider-items {
-        animation:2s;
-       
-      }
-  }
-  
+        animation: scroll 1s linear infinite; /* faster scroll speed */
+    }
+    
+    .item {
+        width: 120px; /* smaller item width */
+    }
+
+    .item img {
+        width: 80px; /* smaller image */
+        height: 80px;
+    }
+}
+
   
   /* journey section  */
 
@@ -1153,8 +1152,11 @@ button{
      .slider-items{
         display: flex;
         flex-direction: column;
+        animation: scroll 10s linear infinite;
+
      }
 
+    
     /* contact */
 
     .contact-info {
