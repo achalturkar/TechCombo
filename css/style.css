@@ -161,7 +161,7 @@ body {
     transition: max-height 0.3s ease;
     border-radius: 20px;
     left: 0;
-        z-index: 9999; /* High z-index value */
+    z-index: 9999; /* High z-index value */
 }
 
 /* When menu is open */
@@ -354,7 +354,7 @@ main {
 }
 
 .clr {
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
 }
 
 main a {

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg {
+    margin-top: 55px;
+    background-color: #15B392;
+    /* width: 100%; */
+    height: 20vh;
+}
+
+.migrate {
+    margin-top: 10px;
+}
+
+.migrate a {
+    text-decoration: none;
+    color: white;
+}
+
+.sec-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.sec-head h1 {
+    color: white;
+    font-size: 40px;
+    font-family: semibold;
+    font-weight: 900;
+}
+
+
+/* staffing intro */
+
+.staff-info {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+}
+
+.left img {
+    width: 90%;
+}
+
+.right {
+    width: 50%;
+}
+
+
+/* selection step */
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.process-step {
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.process-step h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.lssp{
+    width: 20%;
+}
+
+.lssp h1{
+    font-size: 60px;
+    color: chocolate;
+}
+
+.rssp{
+    width: 80%;
+}
+
+.rssp h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+ /* Responsive styling */
+ @media (max-width: 894px) {
+    .staff-info {
+       flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .process-step{
+        width: 100%;
+    }
+
+    .right{
+        margin-top: 10px;
+        width: 100%;
+      }
+    
+
+  }
