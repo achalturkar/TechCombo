@@ -7,11 +7,12 @@
     margin-top: 55px;
     background-color: #15B392;
     /* width: 100%; */
-    height: 20vh;
+    height: 18vh;
 }
 
 .migrate {
     margin-top: 10px;
+    color: white;
 }
 
 .migrate a {
@@ -98,10 +99,20 @@
     font-weight: 700;
 }
 
+.sec-head1 h1 {
+    color: white;
+    font-size: 40px;
+    font-family: semibold;
+    font-weight: 900;
+}
+
 
 
  /* Responsive styling */
  @media (max-width: 894px) {
+    .bg {
+        height: 18vh;
+    }
     .staff-info {
        flex-direction: column;
     }
@@ -123,6 +134,16 @@
         margin-top: 10px;
         width: 100%;
       }
+
+      .head-size{
+        width: 100%;
+        font-size:20px;
+      }
+
+      .sec-head1 h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
     
 
   }
